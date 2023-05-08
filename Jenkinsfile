@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('SCM checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sudhakarbastawade2303/spring-boot-war-example.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/classdevop/spring-boot-war-example.git']])
             }
         }
         stage('build') {
