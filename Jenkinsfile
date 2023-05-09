@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy to test env') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'tomcat-server', path: '', url: 'http://http://3.109.186.242/:8080/')], contextPath: '/app', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat9-server', path: '', url: 'http://13.233.232.129:8080/')], contextPath: '/app', war: '**/*.war'
             }
         }
     }
